@@ -1,0 +1,62 @@
+html {
+    min-height: 100%;
+}
+body {
+    height: 100%;
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+}
+.navbar {
+    background-color: slategray;
+    color: white;
+    margin: 0px 0px 25px 0px;
+    padding: 10px;
+}
+h1 {
+    display: inline;
+}
+a {
+    text-decoration: none;
+    float: right;
+}
+.image-view {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.previous,
+.next {
+    height: 50px;
+    width: 100px;
+    background-color: blueviolet;
+    align-self: center;
+    margin: 0px 5px;
+}
+.image {
+    height: 75vh;
+    width: 75vw;
+    background-color: red;
+}
+.image-nav {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 15px 0px 0px 0px;
+}
+.image-pre {
+    width: 20vw;
+    background-color: rgba(256, 0, 0, 0.2);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+}
+.image-sm {
+    height: 50px;
+    min-width: 50px;
+    margin: 5px;
+    background-color: royalblue;
+}

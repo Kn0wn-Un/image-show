@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/Kn0wn-Un/image-show#readme",
   "devDependencies": {
+    "css-loader": "^5.0.0",
+    "eslint": "^7.12.1",
+    "style-loader": "^2.0.0",
     "webpack": "^5.3.2",
     "webpack-cli": "^4.1.0"
   }
