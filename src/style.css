@@ -100,11 +100,13 @@ a:hover {
 }
 .previous:hover {
     animation-name: left;
-    animation-duration: 300ms;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in-out;
 }
 .next:hover {
     animation-name: right;
-    animation-duration: 300ms;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in-out;
 }
 .play:hover,
 .pause:hover {
@@ -124,6 +126,7 @@ a:hover {
     min-width: 50px;
     margin: 5px;
     background-color: royalblue;
+    transition: transform 100ms ease-in-out;
 }
 .image-sm:hover {
     transform: scale(1.2);
