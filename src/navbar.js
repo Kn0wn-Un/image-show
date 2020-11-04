@@ -1,7 +1,6 @@
 import './style.css';
-
 const navBar = (() => {
-    const addNav = () => {
+    const addHead = () => {
         const nav = document.createElement('div');
         nav.classList.add('navbar');
         const bigI = document.createElement('h1');
@@ -15,7 +14,6 @@ const navBar = (() => {
         nav.appendChild(a);
         document.body.appendChild(nav);
     };
-    return { addNav };
+    return { addHead };
 })();
-
 export default navBar;

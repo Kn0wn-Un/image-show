@@ -1,0 +1,31 @@
+import './style.css';
+import left from './chevron-left.svg';
+import right from './chevron-right.svg';
+import play from './play.svg';
+const imgNav = (() => {
+    const addNav = () => {
+        const imgNav = document.createElement('div');
+        imgNav.classList.add('image-nav');
+        const controls = document.createElement('div');
+        controls.classList.add('controls');
+        const prev = document.createElement('img');
+        prev.classList.add('previous');
+        prev.src = left;
+        prev.alt = 'Previous';
+        const next = document.createElement('img');
+        next.classList.add('next');
+        next.src = right;
+        next.alt = 'Next';
+        const show = document.createElement('img');
+        show.classList.add('play');
+        show.src = play;
+        show.alt = 'Play';
+        controls.appendChild(prev);
+        controls.appendChild(show);
+        controls.appendChild(next);
+        imgNav.appendChild(controls);
+        document.body.appendChild(imgNav);
+    };
+    return { addNav };
+})();
+export default imgNav;

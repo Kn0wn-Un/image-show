@@ -35,14 +35,6 @@ a:hover {
     flex-direction: row;
     justify-content: center;
 }
-.previous,
-.next {
-    height: 50px;
-    width: 100px;
-    background-color: blueviolet;
-    align-self: center;
-    margin: 0px 5px;
-}
 .image {
     height: 75vh;
     width: 75vw;
@@ -54,6 +46,26 @@ a:hover {
     flex-direction: row;
     justify-content: center;
     margin: 15px 0px 0px 0px;
+}
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.previous,
+.next,
+.play,
+.pause {
+    height: 50px;
+    width: 100px;
+    align-self: center;
+    filter: invert(48%) sepia(12%) saturate(377%) hue-rotate(166deg)
+        brightness(90%) contrast(79%);
+}
+.play,
+.pause {
+    flex-grow: 1;
+    height: 40px;
 }
 .image-pre {
     width: 20vw;
