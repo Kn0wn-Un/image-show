@@ -43,7 +43,7 @@ a:hover {
 .image-nav {
     flex-grow: 1;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     margin: 15px 0px 0px 0px;
 }
@@ -64,16 +64,16 @@ a:hover {
 }
 .play,
 .pause {
-    flex-grow: 1;
     height: 40px;
 }
 .image-pre {
-    width: 20vw;
     background-color: rgba(256, 0, 0, 0.2);
+    margin: 15px 0px;
+    align-self: center;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    overflow: hidden;
+    flex-wrap: wrap;
+    max-width: 75vw;
 }
 .image-sm {
     height: 50px;
