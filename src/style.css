@@ -57,14 +57,58 @@ a:hover {
 .play,
 .pause {
     height: 50px;
-    width: 100px;
+    width: 80px;
     align-self: center;
     filter: invert(48%) sepia(12%) saturate(377%) hue-rotate(166deg)
         brightness(90%) contrast(79%);
+    transition: transform 100ms ease-in-out;
 }
 .play,
 .pause {
     height: 40px;
+    order: 2;
+}
+@keyframes left {
+    0% {
+        left: 0px;
+    }
+    50% {
+        left: -25px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+@keyframes right {
+    0% {
+        left: 0px;
+    }
+    50% {
+        left: 25px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+.previous {
+    position: relative;
+    order: 1;
+}
+.next {
+    position: relative;
+    order: 3;
+}
+.previous:hover {
+    animation-name: left;
+    animation-duration: 300ms;
+}
+.next:hover {
+    animation-name: right;
+    animation-duration: 300ms;
+}
+.play:hover,
+.pause:hover {
+    transform: scale(1.1);
 }
 .image-pre {
     background-color: rgba(256, 0, 0, 0.2);
@@ -80,4 +124,7 @@ a:hover {
     min-width: 50px;
     margin: 5px;
     background-color: royalblue;
+}
+.image-sm:hover {
+    transform: scale(1.2);
 }
