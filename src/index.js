@@ -17,7 +17,6 @@ const makeArr = () => {
     imgarr.push(i5);
 };
 makeArr();
-console.log(imgarr);
 navBar.addHead();
 imageView.addImg();
 imgNav.addNav(imgarr);

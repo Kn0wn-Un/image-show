@@ -13,7 +13,6 @@ const navHand = (() => {
     };
     const nextImg = (arr) => {
         let temp = document.querySelector('.image').src;
-        console.log(temp);
         let pos = arr.indexOf(temp);
         imageDisp(arr[(pos + 1) % arr.length]);
     };
@@ -30,7 +29,6 @@ const navHand = (() => {
     const ctrClick = (btn, arr) => {
         let temp = document.querySelector('.image').src;
         let pos = arr.indexOf(temp);
-        console.log(pos);
         if (btn.classList[0] === 'previous') {
             imageDisp(arr[pos === 0 ? arr.length - 1 : (pos - 1) % arr.length]);
             if (btn.nextSibling.classList[0] === 'pause')
