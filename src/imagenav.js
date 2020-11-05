@@ -13,6 +13,7 @@ const imgNav = (() => {
         imgNav.appendChild(controls);
         imgNav.appendChild(preview);
         document.body.appendChild(imgNav);
+        navHand.imageDisp(temp[0]);
     };
     const addControls = (temp) => {
         let controls = document.createElement('div');
@@ -36,21 +37,22 @@ const imgNav = (() => {
         show.src = play;
         show.alt = 'Play';
         show.addEventListener('click', () => {
-            navHand.imageShow(show);
+            navHand.imageShow(show, temp);
         });
         controls.appendChild(prev);
-        controls.appendChild(next);
         controls.appendChild(show);
+        controls.appendChild(next);
         return controls;
     };
     const addPre = (arr) => {
         let preview = document.createElement('div');
         preview.classList.add('image-pre');
         for (let i = 0; i < arr.length; i++) {
-            let imgS = document.createElement('div');
+            let imgS = document.createElement('img');
+            imgS.src = arr[i];
             imgS.classList.add('image-sm');
             imgS.innerHTML = arr[i];
-            navHand.imageClick(imgS);
+            navHand.imageClick(imgS, arr);
             preview.appendChild(imgS);
         }
         return preview;
