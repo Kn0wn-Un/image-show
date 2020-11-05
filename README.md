@@ -2,7 +2,7 @@
 
 ### View in browser
 
-(ImageShow)[https://kn0wn-un.github.io/image-show/]
+[ImageShow](https://kn0wn-un.github.io/image-show/)
 
 ### Introduction
 
