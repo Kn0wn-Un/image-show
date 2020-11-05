@@ -22,7 +22,7 @@ const navHand = (() => {
         else {
             let x = setInterval(() => {
                 navHand.nextImg(arr);
-            }, 2000);
+            }, 3000);
             btn.id = x;
         }
         imgNav.addPause(btn, btn.classList[0] === 'play' ? true : false);
