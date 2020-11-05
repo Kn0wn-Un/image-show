@@ -20,4 +20,3 @@ makeArr();
 navBar.addHead();
 imageView.addImg();
 imgNav.addNav(imgarr);
-console.log('Success!');
